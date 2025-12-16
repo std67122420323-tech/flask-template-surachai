@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <hr>
+    <h2>รายการกีฬาที่ฉันโปรดปราน (for loop)</h2>
+    <ol>
+      {% for sport in sport %}
+      <li><h3>{{ sport }}</h3></li>
+      {% endfor %}
+    </ol>
+{% endblock %}
